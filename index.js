@@ -1,4 +1,4 @@
-var timer = 40;
+var timer = 0;
 var score = 0;
 var rn;
 function makebubble() {
@@ -16,11 +16,9 @@ function runTimer() {
             document.querySelector('#timer').textContent = timer;
         } else {
             clearInterval(timerint);
-            document.getElementById('pbtm').innerHTML = `<h2>Game Over !!</h2>
-             <h2>Your Score is : ${score}<h2>`;
+            document.getElementById('pbtm').innerHTML = `<h2>Game Over !!</h2> <h2>Your Score is : ${score}</h2>`;
         }
     }, 1000);
-
 }
 function getnewhit() {
     rn = Math.floor(Math.random() * 10);
