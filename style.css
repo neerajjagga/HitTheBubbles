@@ -127,6 +127,7 @@ body,html{
     font-weight: 400;
     color: white;
     text-shadow: 3px 2px 40px rgb(255, 255, 255);
+    letter-spacing: 0.1rem;
 }
 #bubbleimg{
     height: 60px;
