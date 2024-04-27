@@ -16,7 +16,7 @@ body,html{
     height: 100%;
     width: 100%;
     padding-top: 1rem;
-    background-color: rgb(179, 255, 179);
+    background-color: rgb(199, 237, 252);
     font-family: "Roboto", sans-serif;
     font-weight: 600;
 }
@@ -26,18 +26,23 @@ body,html{
     width: 90%;
     background-color: white;
     border-radius: 8px;
+    box-shadow: 10px 10px 25px rgb(0, 125, 228);
 }
 #ptop{
     height: 100px;
-    background-color: rgb(19, 128, 19);
+    background-color: rgb(3, 98, 187);
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
 }
 #ptopele{
     display: flex;
     align-items: center;
     gap: 0.8rem;
+}
+.items{
+    display: flex;
+    gap: 5rem;
 }
 #ptopele h2{
     font-size: 1.3rem;
@@ -85,24 +90,78 @@ body,html{
     width: 60px;
     border-radius: 50%;
     font-size: 1.1rem;
-    background-color: green;
+    background-color: rgb(55, 141, 255);
+    color: white;
     display: flex;
     justify-content: center;
     align-items: center;
     font-weight: 600;
+    box-shadow: 1px 1px 1px black;
+    text-shadow: 1px 1px 1px black;
 }
 #bubble:hover{
-    background-color: rgb(1, 114, 1);
+    background-color: rgb(11, 94, 202);
 }
 .restart button{
     font-size: 1.1rem;
     font-weight: 600;
     padding: 0.3rem 0.8rem;
-    border: 2px solid green;
+    border: 1px solid rgb(0, 96, 221);
     border-radius: 8px;
-    background-color: rgb(205, 252, 205);
+    background-color: rgb(218, 240, 253);
+    transition: 0.2s ease 0s;
+}
+.restart:hover button{
+    background-color: rgb(143, 221, 252);
 }
 .restart a{
     text-decoration: none;
-    color: darkgreen;
+    color: rgb(0, 85, 165);
+}
+.heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    color: white;
+    text-shadow: 3px 2px 40px rgb(255, 255, 255);
+}
+#bubbleimg{
+    height: 60px;
+}
+@media screen and (max-width: 950px){
+    #ptop{
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        padding-bottom: 0.8rem;
+    }
+}
+@media screen and (min-width: 450px) and (max-width: 600px) {
+   .items{
+       display: flex;
+       gap: 2.6rem;
+   }
+   .heading{
+    font-size: 0.8rem;
+}
+#bubbleimg{
+    height: 50px;
+}
+#timer{
+    font-size: 1.1rem;
+}
+#scoreval{
+    font-size: 1.1rem;
+}
+#hitvalue{
+    font-size: 1.1rem;
+}
+#ptopele h2{
+    font-size: 1.2rem;
+}
+#bubble{
+    height: 50px;
+    width: 50px;
+}
 }
